@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #be82c9;
+    font-family: 'Raleway', sans-serif;
+    background-image: url("../img/bck.jpg");
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 238, 141);
+    height: 6vh;
+}
+
+.navbar__link{
+    margin: 1.5rem;
+    text-decoration: none;
+    color: rgb(209, 60, 212);
+    font-size: 1.3rem;
+}
+
+.navbar__link:hover{
+    color: #fe9180;
+    border-bottom: 0.4rem solid #fe9180;
+}
+
+.navbar__link--posicion{
+    color: #fe9180;
+    border-bottom: 0.4rem solid #fe9180;
+}
+
+.footer{
+    background-color: #fe9180;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text{
+    color: #fff;
+    letter-spacing: 5px;
+    border-bottom: 2px solid #fff;
+}
+
+.sobremi{
+    height: 88vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.main__sobreMiContainer{
+    height: 88vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    animation: entrada 3s;
+}
+
+@keyframes entrada{
+    0%{opacity: 0;
+        transform: translatey(-15rem)}
+}
+
+.container__sobremi__img{
+    height: 70vh;
+    width: 20vw;
+    background-color: #fff;
+    margin-left: 5rem;
+}
+
+.sobremi__img{
+    margin: 2rem;
+    width: 25vw;
+}
+
+.container__sobremi__txt{
+    width: 40vw;
+    margin-right: 10rem;
+}
+
+.sobremi__ttl{
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
+    color: #fff;
+    line-height: 0;
+}
+
+.sobremi__descripcion{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin-top: -2rem;
+    width: 40vw;
+    height: 14vh;
+    border-radius: 2rem;
+    background-color: #fe9180;
+    padding: 2rem;
+    font-size: 1.4rem;
+    color: #fff;
+    box-shadow: 6px 6px 9px -5px rgba(0,0,0,0.5);
+}
+
+.sobremi__herramientas__ttl{
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    border-bottom: 0.3rem solid rgb(255, 238, 141);
+
+}
+
+.sobremi__herramientasImg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobremi__logo{
+    width: 4vw;
+    margin-left: 4rem;
+}

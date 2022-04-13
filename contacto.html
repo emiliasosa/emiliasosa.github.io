@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Train+One&display=swap" rel="stylesheet">
+    <title>Emilia Sosa Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar__container">
+            <div>
+                <a href="index.html" class="navbar__link" id="navbar--1">Home</a>
+            </div>
+            <div>
+                <a href="sobremi.html" class="navbar__link" id="navbar--1">Sobre mí</a>
+            </div>
+            <div>
+                <a href="proyectos.html" class="navbar__link" id="navbar--2">Proyectos</a>
+            </div>
+            <div>
+                <a class="navbar__link navbar__link--posicion" class="navbar__link" id="navbar--3">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+            <div id="form__datosCorrecto">
+                <div id="datos"></div>
+            </div>
+            <div class="main__contenedor">
+                <div class="contenedor__form">
+                    <form action="https://formspree.io/f/moqrkdge" method="post" class="form" id="form">
+                        <h3 class="form__ttl">Contacto</h3>
+                        <input type="text" name="nombre" id="" placeholder="Nombre" class="form__input" ><br>
+                        <input type="text" name="email" id="" placeholder="Email" class="form__input" required><br>
+                        <input type="text" name="asunto" id="" placeholder="Asunto" class="form__input" required><br>
+                        <textarea name="mensaje" id="" placeholder="Mensaje" class="form__input form__input--grande" 
+                        rows="5" cols="50" maxlength="530" minlength="3" required></textarea><br>
+                        <div class="contenedor__btn">
+                            <button type="submit" class="form__btn">ENVIAR</button>
+                        </div>
+                        <div id="form__error">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">Tzuzul Code Bootcamp - Abril 2022</p>
+    </footer>
+    <script src="js/contacto.js"></script>
+</body>
+</html>

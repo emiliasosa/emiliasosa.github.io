@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #be82c9;
+    font-family: 'Raleway', sans-serif;
+    background-image: url("../img/bck.jpg");
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 238, 141);
+    height: 6vh;
+}
+
+.navbar__link{
+    margin: 1.5rem;
+    text-decoration: none;
+    color: rgb(209, 60, 212);
+    font-size: 1.3rem;
+}
+
+.navbar__link:hover{
+    color: #fe9180;
+    border-bottom: 0.4rem solid #fe9180;
+}
+
+.navbar__link--posicion{
+    color: #fe9180;
+    border-bottom: 0.4rem solid #fe9180;
+}
+
+.footer{
+    background-color: #fe9180;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text{
+    color: #fff;
+    letter-spacing: 5px;
+    border-bottom: 2px solid #fff;
+}
+
+.main{
+    height: 88vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main__contenedor{
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contenedor__form{
+    width: 32vw;
+    height: 50vh;
+    background-color: rgb(255, 238, 141);
+    box-shadow: 8px 8px 9px -5px rgba(0,0,0,0.5);
+    padding: 2rem;
+    animation: entradaForm 2s;
+}
+
+@keyframes entradaForm{
+    0%{opacity: 0;
+        transform: translateY(15rem) rotate(20deg);}
+}
+
+
+.form__ttl{
+    color: #be82c9;
+    font-size: 4.5rem;
+    margin: 0;
+    padding: 0;
+    line-height: 5rem;
+}
+
+.form__input{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin: 0.5rem;
+    background-color: #fe9180;
+    color: #fff;
+    border: none;
+    width: 30vw;
+    height: 2rem;
+    padding-left: 1rem;
+}
+
+.form__input::placeholder{
+    color: rgb(225, 225, 225);
+    letter-spacing: 0.3rem;
+}
+
+.form__input:focus{
+    outline-color: #ffffff;
+    color: #fff;
+}
+
+
+.form__input--grande{
+    padding: 1rem 1rem 1rem 1rem;
+    font-family: 'Raleway', sans-serif;
+    height: 8rem;
+    width: 29.3vw;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contenedor__btn{
+    width: 32vw;
+    display: flex;
+    justify-content: center;
+}
+
+.form__btn{
+    width: 31vw;
+    border: none;
+    height: 3vh;
+    background-color: #be82c9;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: .3rem;
+}
+
+.form__btn:hover{
+    border-radius: 0.5rem 0 0.5rem 0;
+    background-color: #bbbbbb;
+    color: rgb(255, 238, 141);
+    box-shadow: 4px 4px 9px -5px rgba(0,0,0,0.5);
+}
+
+#form__datosCorrecto{
+    visibility: hidden;
+    position: absolute;
+    width: 50vw;
+    height: 30vh;
+    background-color: #fe9180;
+    box-shadow: 9px 8px 9px -5px rgba(0,0,0,0.5);
+    
+}
+
+.correcto{
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.error{
+    line-height: 0rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: red;
+}
